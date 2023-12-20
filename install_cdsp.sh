@@ -156,9 +156,9 @@ sed 's/^SHAIRPORT_OUT=.*/SHAIRPORT_OUT="camilladsp"/' -i /usr/local/etc/pcp/pcp.
 
 ### Install CamillaGUI
 
-install_if_missing python3.8
-install_temporarily_if_missing python3.8-pip
-$use32bit && install_temporarily_if_missing python3.8-dev
+install_if_missing python3.11
+install_temporarily_if_missing python3.11-pip
+$use32bit && install_temporarily_if_missing python3.11-dev
 sudo mkdir -m 775 /usr/local/camillagui
 sudo chown root:staff /usr/local/camillagui
 cd /usr/local/camillagui
@@ -227,7 +227,7 @@ cd /tmp
 install_temporarily_if_missing squashfs-tools
 mksquashfs piCoreCDSP piCoreCDSP.tcz
 mv -f piCoreCDSP.tcz /etc/sysconfig/tcedir/optional
-echo "python3.8.tcz" > /etc/sysconfig/tcedir/optional/piCoreCDSP.tcz.dep
+echo "python3.11.tcz" > /etc/sysconfig/tcedir/optional/piCoreCDSP.tcz.dep
 echo piCoreCDSP.tcz >> /etc/sysconfig/tcedir/onboot.lst
 
 ### Save Changes

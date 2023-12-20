@@ -3,13 +3,11 @@ The goal of this project is to provide an easy way to install CamillaDSP 2.0.0 i
 and automatic samplerate switching on a [piCorePlayer](https://www.picoreplayer.org/) installation.
 
 ## Requirements
-- a fresh piCorePlayer 8.2.0 installation without any modifications
+- a fresh piCorePlayer 9.0.0 installation without any modifications
 - on an armv7 or arch64 compatible device
 
 ## How to install
-1. Increase piCorePlayer SD Card size to at least 200MB
-   - In `Main Page > Additional functions > Resize FS`
-   - Select `200 MB` or one of the larger options
+1. Increase piCorePlayer SD Card size to at least 200MB via `Main Page > Additional functions > Resize FS`
 2. Run `install_cdsp.sh` on piCorePlayer:
    - SSH onto the piCorePlayer as user `tc`
      - Usually `ssh tc@pcp.local` or `ssh tc@<IP of your piCorePlayer>` with password `piCore`
