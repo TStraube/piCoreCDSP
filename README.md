@@ -14,8 +14,10 @@ and automatic samplerate switching on a [piCorePlayer](https://www.picoreplayer.
    - SSH onto the piCorePlayer as user `tc`
      - Usually `ssh tc@pcp.local` or `ssh tc@<IP of your piCorePlayer>` with password `piCore`
      - [How to find the IP adress of your piCorePlayer](https://docs.picoreplayer.org/how-to/determine_your_pcp_ip_address/)
-   - Run  
-     `wget https://github.com/JWahle/piCoreCDSP/raw/main/install_cdsp.sh && chmod u+x install_cdsp.sh && ./install_cdsp.sh`
+   - For piCore 8.* run  
+     `wget https://github.com/TStraube/piCoreCDSP/raw/main/install_cdsp.sh && chmod u+x install_cdsp.sh && ./install_cdsp.sh`
+   - For piCore 9.* run  
+       `wget https://github.com/TStraube/piCoreCDSP/raw/pcp9/install_cdsp.sh && chmod u+x install_cdsp.sh && ./install_cdsp.sh`
    - Or if you want to run a modified version of the script, see the [For Developers](#for-developers) section
 3. Open CamillaGUI in the browser:
    - It will be running on port 5000 of piCorePlayer.  
