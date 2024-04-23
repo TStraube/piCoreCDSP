@@ -171,7 +171,7 @@ pip install websocket_client aiohttp jsonschema setuptools
 pip install git+https://github.com/HEnquist/pycamilladsp.git@v2.0.2
 pip install git+https://github.com/HEnquist/pycamilladsp-plot.git@v2.0.0
 deactivate # deactivate custom python environment
-wget https://github.com/HEnquist/camillagui-backend/releases/download/v2.0.0/camillagui.zip
+wget https://github.com/HEnquist/camillagui-backend/releases/download/v2.1.1/camillagui.zip
 unzip camillagui.zip
 rm -f camillagui.zip
 echo '
@@ -179,6 +179,7 @@ echo '
 camilla_host: "0.0.0.0"
 camilla_port: 1234
 port: 5000
+bind_address: "0.0.0.0"
 config_dir: "/mnt/mmcblk0p2/tce/camilladsp/configs"
 coeff_dir: "/mnt/mmcblk0p2/tce/camilladsp/coeffs"
 default_config: "/mnt/mmcblk0p2/tce/camilladsp/default_config.yml"
