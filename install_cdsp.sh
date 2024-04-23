@@ -171,7 +171,7 @@ pip install websocket_client aiohttp jsonschema setuptools
 pip install git+https://github.com/HEnquist/pycamilladsp.git@v2.0.2
 pip install git+https://github.com/HEnquist/pycamilladsp-plot.git@v2.0.0
 deactivate # deactivate custom python environment
-wget https://github.com/HEnquist/camillagui-backend/releases/download/v2.1.1/camillagui.zip
+wget https://github.com/HEnquist/camillagui-backend/releases/download/v2.0.0/camillagui.zip
 unzip camillagui.zip
 rm -f camillagui.zip
 echo '
